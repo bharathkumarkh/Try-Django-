@@ -40,14 +40,12 @@ def recipe_create_view(request):
 def recipe_update_view(request, id=None):
     obj = get_object_or_404(Recipe, id=id,user=request.user)
     form = RecipeForm(request.POST or None, instance=obj)
-    obj = get_object_or_404(Recipe, id=id,user=request.user)
     context = {
-        "form":form,
+        "form": form,
         "object": obj
     }
     if form.is_valid():
         form.save()
         context['message']= 'Data Saved.'
-        return redirect(obj.get_absolute_url())
     return render(request, "recipes/create-update.html", context)
     
