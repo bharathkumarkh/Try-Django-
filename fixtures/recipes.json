@@ -1,0 +1,156 @@
+[
+{
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "name": "Chicken Curry",
+        "description": "This is description!",
+        "directions": "This is direction!",
+        "timestamp": "2022-07-03T12:14:33.345Z",
+        "updated": "2022-07-08T15:07:32.535Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipe",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "name": "Mutton Curry",
+        "description": "",
+        "directions": "",
+        "timestamp": "2022-07-07T07:53:37.367Z",
+        "updated": "2022-07-08T15:08:02.561Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 1,
+    "fields": {
+        "recipe": 1,
+        "name": "Chicken (Fresh-Cut)",
+        "description": "",
+        "quantity": "1/2",
+        "quantity_as_float": 0.5,
+        "unit": "Kg",
+        "directions": "",
+        "timestamp": "2022-07-03T12:34:07.220Z",
+        "updated": "2022-07-08T15:07:32.539Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 2,
+    "fields": {
+        "recipe": 1,
+        "name": "Onion",
+        "description": "",
+        "quantity": "1/2",
+        "quantity_as_float": 0.5,
+        "unit": "Kg",
+        "directions": "",
+        "timestamp": "2022-07-08T04:29:46.892Z",
+        "updated": "2022-07-08T15:07:32.542Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 3,
+    "fields": {
+        "recipe": 2,
+        "name": "Mutton",
+        "description": null,
+        "quantity": "1/2",
+        "quantity_as_float": 0.5,
+        "unit": "Kg",
+        "directions": null,
+        "timestamp": "2022-07-08T14:19:54.604Z",
+        "updated": "2022-07-08T15:08:02.564Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 4,
+    "fields": {
+        "recipe": 2,
+        "name": "Onion",
+        "description": null,
+        "quantity": "1/2",
+        "quantity_as_float": 0.5,
+        "unit": "Kg",
+        "directions": null,
+        "timestamp": "2022-07-08T14:20:52.567Z",
+        "updated": "2022-07-08T15:08:02.567Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 5,
+    "fields": {
+        "recipe": 2,
+        "name": "Tomato",
+        "description": null,
+        "quantity": "1/2",
+        "quantity_as_float": 0.5,
+        "unit": "Kg",
+        "directions": null,
+        "timestamp": "2022-07-08T14:20:52.569Z",
+        "updated": "2022-07-08T15:08:02.569Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 7,
+    "fields": {
+        "recipe": 1,
+        "name": "Tomato",
+        "description": null,
+        "quantity": "1/2",
+        "quantity_as_float": 0.5,
+        "unit": "Kg",
+        "directions": null,
+        "timestamp": "2022-07-08T15:04:45.031Z",
+        "updated": "2022-07-08T15:07:32.544Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 8,
+    "fields": {
+        "recipe": 1,
+        "name": "Ginger & Garlic Paste",
+        "description": null,
+        "quantity": "100",
+        "quantity_as_float": 100.0,
+        "unit": "g",
+        "directions": null,
+        "timestamp": "2022-07-08T15:07:32.546Z",
+        "updated": "2022-07-08T15:07:32.546Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 9,
+    "fields": {
+        "recipe": 2,
+        "name": "Ginger & Garlic Paste",
+        "description": null,
+        "quantity": "100",
+        "quantity_as_float": 100.0,
+        "unit": "g",
+        "directions": null,
+        "timestamp": "2022-07-08T15:08:02.570Z",
+        "updated": "2022-07-08T15:08:02.570Z",
+        "active": true
+    }
+}
+]
