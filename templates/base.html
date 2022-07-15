@@ -3,10 +3,11 @@
 <html>
     <head>
         <script src="https://unpkg.com/htmx.org@1.7.0"></script>
-        <link rel="stylesheet" href='{% static "/recipes/recipes-htmx.css" %}' />
+        <link rel="stylesheet" href='{% static "recipes/recipes-htmx.css" %}' />
     </head>
     <body>
         <h1>Hello World</h1>
+        {% static "recipes/recipes-htmx.css" %}
         {% include 'search/search-form.html' %}
         {% block content %}
         <h3>This will be replaced</h3>
