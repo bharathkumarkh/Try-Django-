@@ -40,9 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #third-party
     'django_htmx',
+    'storages',
+    #internal
     'articles',
     'recipes',
+    'search',
 ]
 
 MIDDLEWARE = [
@@ -154,6 +158,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # in production we need cdn
+
+from .cdn.conf import * #noqa
+
+#https://trydjangoo.sgp1.digitaloceanspaces.com
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

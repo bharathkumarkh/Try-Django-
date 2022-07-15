@@ -1,32 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <script src="https://unpkg.com/htmx.org@1.7.0"></script>
-        <style>
-            .htmx-indicator {
-                display: none;
-            }
-            .htmx-request .htmx-indicator{
-                display: inline;
-            }
-            .htmx-inverted-indicator{
-                display: inline;
-            }
-            .htmx-request .htmx-inverted-indicator{
-                display: none;
-            }
-        </style>
+        <link rel="stylesheet" href='{% static "/recipes/recipes-htmx.css" %}' />
     </head>
     <body>
         <h1>Hello World</h1>
-        <form action='/articles/' method='GET'>
-            <input type='text' name='q' />
-            <input type='submit' />
-        </form>
-
+        {% include 'search/search-form.html' %}
         {% block content %}
         <h3>This will be replaced</h3>
         {% endblock content %}
 
+
+
+        <script>
+            document.body.addEventListener("htmx:configRequest",(event)=>{
+                event.detail.headers['X-CSRFToken']='{{csrf_token}}'
+            })
+
+        </script>
     </body>
 </html>
