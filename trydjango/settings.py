@@ -165,6 +165,8 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # in production we need cdn
 
+MEDIA_ROOT = BASE_DIR / "staticfiles-cdn" / "uploads"
+
 from .cdn.conf import * #noqa
 
 #https://trydjangoo.sgp1.digitaloceanspaces.com
