@@ -59,9 +59,9 @@ jobs:
         run: |
           python manage.py collectstatic --noinput
       - name: Push Main Branch into Production
-        uses: codingforentrepreneurs/action-branch-to-branch@main
+        uses: bharathkumarkh/action-branch-to-branch@main
         with:
-          dest_branch: production-3
+          dest_branch: production-1
           source_branch: main
           commit_message: "Release production version"
         env:
