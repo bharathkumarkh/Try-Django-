@@ -1,2 +1,2 @@
-ID                                      Spec Name                Default Ingress    Active Deployment ID    In Progress Deployment ID    Created At                                 Updated At
-73c0ba96-e249-4cb1-ba07-3aa7a69c1663    try-django-32-via-cli                                                                            2022-07-18 05:16:30.045925353 +0000 UTC    2022-07-18 05:16:30.045925353 +0000 UTC
+ID                                      Spec Name         Default Ingress    Active Deployment ID    In Progress Deployment ID    Created At                                 Updated At
+d8040129-7116-4b78-b192-3a98dde789a7    try-django-3-2                                                                            2022-07-19 08:17:01.521147166 +0000 UTC    2022-07-19 08:17:01.521147166 +0000 UTC
