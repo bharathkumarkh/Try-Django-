@@ -1,13 +1,13 @@
+
 <div class='row'>
     <div class='col-12 col-md-8'>
 
-
+<br>
 <h1>{{ object.name }}</h1>
 {% if object.get_edit_url %}
 <small>
-    <a href='{{ object.get_edit_url }}'>Edit</a> 
-    <a href='{{ object.get_delete_url }}' hx-post='{{ object.get_delete_url }}' hx-confirm='Are you sure you want to delete {{ object.name }}?' hx-trigger='click'
-    >Delete</a> 
+    <button onclick="location.href='{{ object.get_edit_url }}'" type="button">Edit</button> 
+    <a href='{{ object.get_delete_url }}' hx-post='{{ object.get_delete_url }}' hx-confirm='Are you sure you want to delete {{ object.name }}?' hx-trigger='click'>Delete</a> 
 </small>
 
 
@@ -18,7 +18,7 @@
 
 </div>
 <div class='col-12 col-md-4'>
-
+    <br><h3>Ingredients</h3>
 
 {% for ingredient in object.get_ingredients_children %}
 {% include 'recipes/partials/ingredient-inline.html' with object=ingredient %}
@@ -26,7 +26,7 @@
 {% endfor %}
 
 
-<div hx-get="{{ object.get_image_upload_url }}" hx-trigger='revealed'></div>
+<!-- <div hx-get="{{ object.get_image_upload_url }}" hx-trigger='revealed'></div>
 
             <div id='ingredient-create'>
                 
@@ -36,5 +36,5 @@
                 hx-target='#ingredient-create' hx-swap='beforeend'>Add ingredient</button>
 
 
-            </div>
+            </div> -->
         </div>
